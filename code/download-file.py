@@ -1,5 +1,6 @@
-import os
+import shutil
 import requests
+import os
 
 dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\GEMN'
 
@@ -10,6 +11,9 @@ def download_file(url, endereço):
 
     with open(endereço, 'wb') as output:
         output.write(respostaDOserver.content)
-os.path()
+
+
 if __name__ == "__main__":
+    
     download_file("https://www.ime.usp.br/~slago/lp-13.pdf", 'teste.pdf')
+    shutil.move('teste.pdf' , dir)
