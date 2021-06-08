@@ -2,7 +2,7 @@ import shutil
 import requests
 import os
 
-dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\GEMN'
+dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'
 
 os.makedirs(dir)
 
