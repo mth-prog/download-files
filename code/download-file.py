@@ -13,9 +13,9 @@ def download_file(url, endereço, pasta):
     with open(endereço, 'wb') as output:
         output.write(respostaDOserver.content)
     shutil.move(endereço , pasta) #mover o arquivo para a pasta desejada
-    os.startfile(dir + "/" + endereço) #abre o arquivo 
+    #os.startfile(dir + "/" + endereço) #abre o arquivo 
   
-download_file("https://drive.google.com/u/0/uc?id=1Qwadv-DeWeop_H5pKBi7gECaBX1pK089&export=download", 'teste.pdf', dir)
+download_file("https://drive.google.com/u/0/uc?id=1QEvcAhZaVqgovN6PqltFqOnHq9IepXdz&export=download", "teste.accdb", dir)
 
 '''keyb = Controller()
 
