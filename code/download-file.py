@@ -1,7 +1,7 @@
 import shutil
 import requests
 import os
-import keyboard
+from pynput.keyboard import Key, Controller
 
 dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'
 
@@ -15,4 +15,8 @@ def download_file(url, endereço, pasta):
     shutil.move(endereço , pasta) #mover o arquivo para a pasta desejada
     os.startfile(dir + "/" + endereço) #abre o arquivo 
   
-download_file("https://www.ime.usp.br/~slago/lp-13.pdf", 'teste.pdf', dir)
+download_file("https://drive.google.com/u/0/uc?id=1Qwadv-DeWeop_H5pKBi7gECaBX1pK089&export=download", 'teste.pdf', dir)
+
+'''keyb = Controller()
+
+keyb.press('l')'''
