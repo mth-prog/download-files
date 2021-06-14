@@ -2,6 +2,7 @@ import shutil
 import requests
 import os
 import zipfile
+import struct
 
 
 dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'
@@ -32,3 +33,8 @@ for item in os.listdir(dir_name):
         zip_ref.extractall(dir_name)
         zip_ref.close()
         os.remove('teste.zip')
+        os.startfile(dir + "/" + "Novo Documento de Texto (2).txt") #~caso queria abrir o programa
+
+
+#! print(struct.calcsize("P")*8) mostra se é 64 ou 32
+
