@@ -33,8 +33,9 @@ for item in os.listdir(dir_name):
         zip_ref.extractall(dir_name)
         zip_ref.close()
         os.remove('teste.zip')
-        os.startfile(dir + "/" + "Novo Documento de Texto (2).txt") #~caso queria abrir o programa
+        os.startfile(dir + "/" + "teste.accdb") #~caso queria abrir o programa
 
 
 #! print(struct.calcsize("P")*8) mostra se é 64 ou 32
 
+JJJJJJJJJJJJJJJJ
