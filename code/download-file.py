@@ -37,5 +37,3 @@ for item in os.listdir(dir_name):
 
 
 #! print(struct.calcsize("P")*8) mostra se é 64 ou 32
-
-JJJJJJJJJJJJJJJJ
