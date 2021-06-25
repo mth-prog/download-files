@@ -40,7 +40,7 @@ print (access_version)'''
 
 import win32com.client
 
-xl = win32com.client.Dispatch("access.Application")
+'''xl = win32com.client.Dispatch("access.Application")
 access_version = xl.version
 print(access_version)
 
@@ -49,4 +49,5 @@ if access_version <= "16.0":
     print("number")
 else:
     print("string")
-#end if
+#end if'''
+print(win32com.client.Dispatch("access.Application").version)

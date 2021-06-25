@@ -10,7 +10,7 @@ VersionOS = (struct.calcsize("P")*8) #~ procura a versão do SO
 
 xl = win32com.client.Dispatch("access.Application") #~ procura a versão do Office
 access_version = xl.version
-#print(access_version)
+
 
 
 
