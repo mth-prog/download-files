@@ -4,6 +4,8 @@ import os
 import zipfile
 import struct
 
+VersionOS = (struct.calcsize("P")*8) #~ procura a versão do SO
+
 
 dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'
 
@@ -35,4 +37,4 @@ for item in os.listdir(dir_name):
         os.startfile(dir + "/" + "teste.accdb") #~caso queria abrir o programa
 
 
-#! print(struct.calcsize("P")*8) mostra se é 64 ou 32
+
