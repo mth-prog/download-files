@@ -9,7 +9,6 @@ dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'
 
 os.makedirs(dir)
 
-
 def download_file(url, nome, pasta):
     respostaDOserver =  requests.get(url)
 
