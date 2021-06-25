@@ -3,8 +3,15 @@ import requests
 import os
 import zipfile
 import struct
+import win32com.client
 
 VersionOS = (struct.calcsize("P")*8) #~ procura a versão do SO
+
+
+xl = win32com.client.Dispatch("access.Application") #~ procura a versão do Office
+access_version = xl.version
+#print(access_version)
+
 
 
 dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'

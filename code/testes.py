@@ -39,9 +39,14 @@ access_version = access.version
 print (access_version)'''
 
 import win32com.client
+
 xl = win32com.client.Dispatch("access.Application")
- # The line above invokes the functionality of this class.
- # xl is now an object we can use to talk to Excel.
-print(xl)
 access_version = xl.version
 print(access_version)
+
+
+if access_version <= "16.0":
+    print("number")
+else:
+    print("string")
+#end if
