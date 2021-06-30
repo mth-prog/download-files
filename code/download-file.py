@@ -4,6 +4,7 @@ import os
 import zipfile
 import struct
 import win32com.client
+ 
 
 VersionOS = (struct.calcsize("P")*8) #~ procura a versão do SO
 
@@ -11,7 +12,9 @@ VersionOS = (struct.calcsize("P")*8) #~ procura a versão do SO
 xl = win32com.client.Dispatch("access.Application") #~ procura a versão do Office
 access_version = xl.version
 
-
+def is_64bit_pe(filename):  #~ Ira retorna true pra 64 e false para 32
+    import win32file
+    return win32file.GetBinaryType(filename) == 6
 
 
 dir = r'C:\Users\Usuario(a) Master\OneDrive\Área de Trabalho\Teste'

@@ -144,5 +144,11 @@ def is_64bit_pe(filename):
     return win32file.GetBinaryType(filename) == 6
 
 
-print(is_64bit_pe(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE')) #  64 bits
-print(is_64bit_pe(r"C:\Program Files (x86)\Notepad++\notepad++.exe")) ## 32 bits
+print(is_64bit_pe(r'C:\Program Files\Microsoft Office\root\Office16\MSACCESS.EXE')) #  64 bits
+print(is_64bit_pe(r"C:\Program Files (x86)\Notepad++\notepad++.exe") ) ## 32 bits
+
+
+if is_64bit_pe(r'C:\Program Files\Microsoft Office\root\Office16\MSACCESS.EXE') == False:
+    print("e 32 bits parca")
+else:
+    print("e 64 bro")
