@@ -1,5 +1,5 @@
 import winreg
-
+import struct
 '''
 def getMicrosoftWordVersion():
     key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\Microsoft\\Office", 0, winreg.KEY_READ)
@@ -111,11 +111,11 @@ import win32api
     return props 
 
 
-print(getFileProperties("C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"))'''
+print(getFileProperties("C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"))
 
 
 
-'''from win32api import GetFileVersionInfo, LOWORD, HIWORD
+from win32api import GetFileVersionInfo, LOWORD, HIWORD
 def get_version_number(filename):
     try:
         info = GetFileVersionInfo (filename, "\\")
@@ -128,16 +128,16 @@ if __name__ == "__main__":
     version = ".".join([str (i) for i in get_version_number (r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE')])
     print(version)
 
-print(get_version_number(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE'))'''
+print(get_version_number(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE'))
 
 'return f.read(5)[-1] == 2'
 
-'''def is_64bit_elf(filename):
+def is_64bit_elf(filename):
     with open(filename, "rb") as f:
         return f.read(5)[-1]
 
 
-print(is_64bit_elf(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE'))   '''
+print(is_64bit_elf(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE')) 
 
 def is_64bit_pe(filename):
     import win32file
@@ -145,10 +145,5 @@ def is_64bit_pe(filename):
 
 
 print(is_64bit_pe(r'C:\Program Files\Microsoft Office\root\Office16\MSACCESS.EXE')) #  64 bits
-print(is_64bit_pe(r"C:\Program Files (x86)\Notepad++\notepad++.exe") ) ## 32 bits
+print(is_64bit_pe(r"C:\Program Files (x86)\Notepad++\notepad++.exe") ) ## 32 bits'''
 
-
-if is_64bit_pe(r'C:\Program Files\Microsoft Office\root\Office16\MSACCESS.EXE') == False:
-    print("e 32 bits parca")
-else:
-    print("e 64 bro")
