@@ -17,7 +17,7 @@ def download_file(url, nome, pasta):
     shutil.move(nome , pasta) #mover o arquivo para a pasta desejada
     #os.startfile(dir + "/" + nome) #abre o arquivo 
     
-download_file("https://drive.google.com/u/0/uc?id=1CDGAvfTmCLXfuRwXkWCwSgVBXW0_YD0D&export=download", "teste.zip", dir)
+download_file("link", "NomeDoArquivo.zip", dir)
 
 
 dir_name = dir
